@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "postcss css/tailwind.css -o public/css/styles.css --watch",
     "start":"npx tailwindcss-cli -i css/tailwind.css -o public/css/styles.css",
-    "build": "postcss css/tailwind.css -o public/css/styles.css",
+    "build": "npx tailwindcss css/tailwind.css -o css/style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
