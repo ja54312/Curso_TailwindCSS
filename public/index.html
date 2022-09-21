@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card / Producto</title>
+    <title>TAILWIND</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
-<body class="min-h-screen bg-gray-400 mx-4 mb-8">
-   <div class="mt-4 md:w-1/2 md:flex md:bg-white rounded-lg">
+<header>
+    <div class="px-2 bg-secondary text-white flex justify-between items-center">
+        <div><img class="h-8 py-1" src="./assets/logo-w.svg" alt="logo"/></div>
+        <div class="text-2xl">&equiv;</div>
+    </div>
+</header>
+<body class="min-h-screen bg-gray-400">
+   <!-- <div class="mt-4 md:w-1/2 md:flex md:bg-white rounded-lg">
         <div>
             <img class="rounded-lg w-full" src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="hamburguesa"/>
         </div>
@@ -18,6 +25,21 @@
             <div class="text-sm font-semibold text-gray-700 mt-2">MXN $15</div>
             <div class="text-yellow-700 text-xs mt-2">&starf;&starf;&starf;&starf;&star; / 36reseñas</div>
         </div>
-   </div>
+   </div> -->
 </body>
+<footer class="absolute bottom-0 w-full bg-secondary text-white">
+    <div class="md:flex md:flex-row-reverse justify-around">
+        <div class="ml-8 mt-4">
+            <div class="hover:text-blue-600"><i class="fa fa-facebook"></i>/facebook</div>
+            <div class="hover:text-primary"><i class="fa fa-instagram"></i>/instagram</div>
+            <div class="hover:text-blue-400"><i class="fa fa-twitter"></i>/twitter</div>
+        </div>
+        <ul class="mt-4 mb-4 ml-8 md:list-disc">
+            <li>Soporte</li>
+            <li>Acerca de nosotros</li>
+            <li>Registro</li>
+            <li>Aviso de Privaciadad</li>
+        </ul>
+    </div>
+</footer>
 </html>
