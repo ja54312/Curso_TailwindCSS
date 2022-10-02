@@ -12,14 +12,23 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </head>
   <body>
-    <nav class="bg-secondary text-gray-100">
+    <nav
+      class="fixed bg-secondary text-gray-100 w-full z-10"
+      x-data="{open:false}"
+    >
       <div
         class="px-2 bg-secondary text-white flex justify-between items-center"
       >
         <div><img class="h-8 py-1" src="./assets/logo-w.svg" alt="logo" /></div>
-        <div class="text-2xl">&equiv;</div>
+        <div class="text-2xl" @click="open = true">&equiv;</div>
+      </div>
+      <div x-show="'open" @click.away="open = false">
         <div class="mx-2 my-1">
           <input
             class="form-control"
